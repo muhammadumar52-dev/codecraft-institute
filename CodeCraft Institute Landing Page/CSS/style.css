@@ -1,0 +1,533 @@
+/* Navbar */
+
+.nav-link {
+    display: block;
+    padding: var(--bs-nav-link-padding-y) var(--bs-nav-link-padding-x);
+    font-size: var(--bs-nav-link-font-size);
+    font-weight: var(--bs-nav-link-font-weight);
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    background: 0 0;
+    border: 0;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out;
+}
+
+/* image og hero section  */
+.hero-section {
+    background-image: url("../images/Hero-BG.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 90vh;
+}
+
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.70);
+    min-height: 90vh;
+    display: flex;
+    align-items: center;
+}
+
+
+/* ================= COURSE CARDS ================= */
+
+.course-card {
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+}
+
+
+/* Course Image */
+
+.course-card .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+
+/* Card Body */
+
+.course-card .card-body {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+
+/* Course Title */
+
+.course-card .card-title {
+    min-height: 48px;
+}
+
+
+/* Course Description */
+
+.course-card .card-text {
+    min-height: 72px;
+}
+
+
+/* Bottom Area */
+
+.course-card .course-btn {
+    margin-top: auto;
+}
+
+
+/* Hover Effect */
+
+.course-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+.course-bottom {
+    margin-top: auto;
+}
+
+/* ================= TEACHER CARDS ================= */
+
+.teacher-card {
+    height: 100%;
+    transition: all 0.3s ease;
+}
+
+/* Same Image Height */
+.teacher-image {
+    width: 100%;
+    height: 280px;
+    overflow: hidden;
+}
+
+.teacher-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    display: block;
+}
+
+/* Hover Effect */
+.teacher-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+/* Social Icons */
+.teacher-card a {
+    transition: all 0.3s ease;
+}
+
+.teacher-card a:hover {
+    transform: translateY(-3px);
+}
+
+
+
+/* ================= PRICING SECTION ================= */
+
+.pricing-card {
+    position: relative;
+    overflow: hidden;
+    transition: all 0.3s ease;
+    border-radius: 15px;
+}
+
+
+/* Card Hover */
+
+.pricing-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Pricing Icon */
+
+.pricing-icon {
+    width: 65px;
+    height: 65px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(13, 202, 240, 0.10);
+
+    border-radius: 50%;
+
+    font-size: 28px;
+
+    color: #0dcaf0;
+}
+
+
+/* Popular Plan */
+
+.popular-plan {
+    border: 2px solid #0dcaf0 !important;
+}
+
+
+/* Popular Badge */
+
+.popular-badge {
+    position: absolute;
+
+    top: 18px;
+    right: -35px;
+
+    background: #0dcaf0;
+    color: white;
+
+    padding: 7px 40px;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    transform: rotate(45deg);
+}
+
+
+
+
+/* ================= TESTIMONIALS ================= */
+
+.testimonial-card {
+    border-radius: 15px;
+    transition: all 0.3s ease;
+}
+
+
+/* Hover Effect */
+
+.testimonial-card:hover {
+    transform: translateY(-8px);
+
+    box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+}
+
+
+/* Quote Icon */
+
+.testimonial-icon {
+    width: 50px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(13, 202, 240, 0.10);
+
+    color: #0dcaf0;
+
+    border-radius: 50%;
+
+    font-size: 28px;
+}
+
+
+/* Student Image */
+
+.testimonial-image {
+    width: 55px;
+    height: 55px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+
+    border: 3px solid #0dcaf0;
+}
+
+
+/* Review Text */
+
+.testimonial-card p {
+    line-height: 1.7;
+}
+
+
+
+
+
+/* ================= FAQ SECTION ================= */
+
+#faq .accordion-item {
+    border-radius: 12px;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+
+/* Accordion Hover */
+
+#faq .accordion-item:hover {
+    transform: translateY(-2px);
+}
+
+
+/* Accordion Button */
+
+#faq .accordion-button {
+    padding: 20px 24px;
+    font-size: 1rem;
+    color: #212529;
+}
+
+
+/* Remove Bootstrap Focus Shadow */
+
+#faq .accordion-button:focus {
+    box-shadow: none;
+}
+
+
+/* Open Accordion */
+
+#faq .accordion-button:not(.collapsed) {
+    color: #0dcaf0;
+    background-color: rgba(13, 202, 240, 0.08);
+}
+
+
+/* Accordion Body */
+
+#faq .accordion-body {
+    padding: 0 24px 22px;
+    line-height: 1.7;
+}
+
+/* ================= CONTACT SECTION ================= */
+
+.contact-info {
+    background: #ffffff;
+    border-radius: 15px;
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+
+/* Contact Icon */
+
+.contact-icon {
+    width: 50px;
+    height: 50px;
+
+    min-width: 50px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: rgba(13, 202, 240, 0.10);
+
+    color: #0dcaf0;
+
+    border-radius: 50%;
+
+    font-size: 20px;
+}
+
+
+/* Contact Form */
+
+.contact-form-card {
+    border-radius: 15px;
+}
+
+
+/* Form Controls */
+
+.contact-form-card .form-control,
+.contact-form-card .form-select {
+    padding: 12px 15px;
+
+    border-radius: 8px;
+
+    border: 1px solid #dee2e6;
+}
+
+
+/* Form Focus */
+
+.contact-form-card .form-control:focus,
+.contact-form-card .form-select:focus {
+
+    border-color: #0dcaf0;
+
+    box-shadow: 0 0 0 0.2rem rgba(13, 202, 240, 0.15);
+}
+
+
+/* Submit Button */
+
+.contact-form-card .btn {
+    padding-top: 12px;
+    padding-bottom: 12px;
+
+    transition: all 0.3s ease;
+}
+
+
+.contact-form-card .btn:hover {
+    transform: translateY(-2px);
+}
+
+
+
+/* ================= FOOTER ================= */
+
+.footer-section {
+    background: #212529;
+}
+
+
+/* Footer Text */
+
+.footer-text {
+    color: #adb5bd;
+    line-height: 1.7;
+}
+
+
+/* Footer Heading */
+
+.footer-heading {
+    color: #ffffff;
+    font-size: 1rem;
+    margin-bottom: 1.25rem;
+}
+
+
+/* Footer Links */
+
+.footer-links li {
+    margin-bottom: 10px;
+}
+
+
+.footer-links a {
+    color: #adb5bd;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+
+.footer-links a:hover {
+    color: #0dcaf0;
+    padding-left: 5px;
+}
+
+
+/* Footer Social Icons */
+
+.footer-social {
+    width: 40px;
+    height: 40px;
+
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    color: #adb5bd;
+
+    border: 1px solid #495057;
+
+    border-radius: 50%;
+
+    text-decoration: none;
+
+    transition: all 0.3s ease;
+}
+
+
+.footer-social:hover {
+    color: #ffffff;
+    background: #0dcaf0;
+    border-color: #0dcaf0;
+
+    transform: translateY(-3px);
+}
+
+
+/* Footer Contact */
+
+.footer-contact {
+    display: flex;
+    align-items: flex-start;
+
+    color: #adb5bd;
+
+    line-height: 1.6;
+}
+
+
+/* Footer Bottom */
+
+.footer-bottom {
+    border-top: 1px solid #495057;
+}
+
+
+.footer-bottom-link {
+    color: #adb5bd;
+
+    text-decoration: none;
+
+    font-size: 0.9rem;
+
+    transition: all 0.3s ease;
+}
+
+
+.footer-bottom-link:hover {
+    color: #0dcaf0;
+}
+
+
+/* Mobile Footer */
+
+@media (max-width: 576px) {
+
+    .footer-section {
+        text-align: center;
+    }
+
+    .footer-contact {
+        justify-content: center;
+    }
+
+    .footer-social {
+        margin: 0 2px;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 576px) {
+
+    .review-card {
+        padding: 35px 20px;
+        min-height: 350px;
+    }
+
+    .review-card p {
+        font-size: 1rem;
+    }
+
+    #studentReviews .carousel-control-prev,
+    #studentReviews .carousel-control-next {
+        display: none;
+    }
+
+}
